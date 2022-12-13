@@ -4,11 +4,11 @@ import { LocationService } from './location.service'
 
 @Component({
   selector: 'sty-users',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.sass']
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.sass']
 })
 
-export class UserComponent implements OnInit{
+export class UsersComponent implements OnInit{
 
   public communes$: Observable<any> | undefined;
 
