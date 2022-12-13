@@ -1,0 +1,59 @@
+
+button
+  margin-right: 1rem
+  padding: 0.4rem
+  padding-left: 1rem
+  padding-right: 1rem
+  margin-bottom: 1rem
+  border-radius: 0.4rem
+  font-size: 1rem
+  font-weight: bold
+
+button:first-child
+  background-color: green
+.age
+  margin-top: 2rem
+  padding: 1rem
+  border-radius: 0.5rem
+.major
+  background-color: green
+  color: white
+.minor
+  background-color: red
+  color: white
+button:last-child
+  background-color: red
+
+button:hover
+  cursor: pointer
+  transition: 0.8s
+  color: white
+
+table
+  border: 2px solid black
+  margin-bottom: 2rem
+
+thead > th
+  border: 2px solid black
+
+.tableau > tr > td
+  border-left: 2px solid black
+  border-right: 2px solid black
+  text-align: center
+
+@media screen and (max-width: 767px)
+  .card-container > *:not(.circle-link) ,
+  .terminal
+    width: 100%
+
+@media screen and (max-width: 575px)
+  svg#rocket-smoke
+    display: none
+    visibility: hidden
+
+.content
+  display: flex
+  justify-content: center
+  margin-top: 6rem
+  flex-direction: column
+  align-items: center

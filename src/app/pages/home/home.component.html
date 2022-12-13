@@ -1,0 +1,61 @@
+
+<div class="content" role="main">
+
+  <h1>{{ title }} Angular</h1>
+
+<h2>Resources</h2>
+
+  <p>I love all of those fruits :</p>
+<ol>
+  <li *ngFor="let fruit of fruits">{{fruit}}</li>
+</ol>
+  <p>Liste complete de courses :</p>
+<ul>
+  <li>{{fruits}}</li>
+</ul>
+<div class="btns">
+  <button (click)="add()">Ajouter</button>
+  <button (click)="less()">Retirer</button>
+</div>
+<p>Compteur = {{count}}</p>
+
+<br>
+<p [style.color]="color">Your Angular version is : ANGULAR {{version}}</p>
+
+<div [ngClass]="customer.age >= 18 ? 'major' : 'minor'" class="age">Vous avez {{customer.age}} ans. {{customer.name}} vous êtes trop jeune</div>
+
+<br>
+<div *ngIf="myInput==='input'; then input; else area"></div>
+
+<ng-template #input>
+  <label>Mon input</label>
+  <input type="text"/>
+</ng-template>
+
+<ng-template #area>
+  <label>Ma text-area</label>
+  <textarea></textarea>
+</ng-template>
+
+<br>
+
+<table>
+  <thead>
+    <th>LastName</th>
+    <th>FirstName</th>
+    <th>Age</th>
+    <th>Code Postal</th>
+  </thead>
+  <tbody class="tableau">
+    <ng-container *ngFor="let user of users">
+      <tr *ngIf="user.age > 18">
+        <td>{{user.lastName}}</td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.cp}}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
+
+</div>

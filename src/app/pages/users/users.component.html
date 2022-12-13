@@ -1,0 +1,12 @@
+<div class="content">
+  <h1>Http request</h1>
+
+  <h2>HttpRequest get 01500 communes names from gouv.api</h2>
+
+  <p>{{(communes$ | async)[1].nom}}</p>
+
+  <ul>
+    <li *ngFor="let commune of communes$ | async">{{commune.nom}}</li>
+  </ul>
+
+</div>
