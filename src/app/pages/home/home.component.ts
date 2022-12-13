@@ -17,7 +17,7 @@ export class HomeComponent {
   myInput ='input'
 
   version = VERSION.major;
-  color = VERSION.major != "14" ? "red" : "green";
+  color = VERSION.major != "15" ? "red" : "green";
 
   count = 0;
   add(){
